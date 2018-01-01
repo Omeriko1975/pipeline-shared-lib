@@ -9,8 +9,15 @@ def ping(address,times)
   
    sh "ping -c ${times} ${address}"
 }
-def sethostname()
+def sethostname(name)
 {
-   hostname = sh script:'hostname', returnStdout:true
+     if ( name == "" )
+     {
+        hostname = name
+     }
+     else
+     {
+        hostname = sh script:'hostname', returnStdout:true
+     }
 }
 
