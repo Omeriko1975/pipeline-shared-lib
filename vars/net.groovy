@@ -9,7 +9,7 @@ def ping(address,times)
   
    sh "ping -c ${times} ${address}"
 }
-def sethostname(name)
+def sethostname(name = "")
 {
      if ( name == "" )
      {
