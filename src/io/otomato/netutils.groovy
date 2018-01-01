@@ -1,4 +1,4 @@
-package io.08
+package io.otomato
 
 def nslookup(address)
 {
