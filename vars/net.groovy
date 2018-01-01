@@ -11,7 +11,7 @@ def ping(address,times)
 }
 def sethostname(name = "")
 {
-     if ( name == "" )
+     if ( name != "" )
      {
         hostname = name
      }
