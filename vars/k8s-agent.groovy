@@ -1,5 +1,4 @@
 def call(Map agentprops) {
- agent {
     kubernetes {
       label agentprops.name
       defaultContainer 'jnlp'
@@ -18,5 +17,4 @@ spec:
     tty: true
 """
     }
-  }
 }
